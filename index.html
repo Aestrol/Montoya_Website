@@ -1,18 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello</title>
+    <title>Profile</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <div class="container">
-        <h1>Welcome!</h1>
-        <p id="message">Click the button below.</p>
-        <button id="myButton">Click Me</button>
-    </div>
 
-    <script src="script.js"></script>
+<body>
+    <!-- HEADER -->
+    <center>
+        <header>
+            <table class="header-table">
+                <td>
+                    <picture>
+                        <img class="profile" src="assets/me.jpg" alt="Profile Picture">
+                    </picture>
+                </td>
+                <td>
+                    <h1 style="margin: 0 0 -0.75em 0;">Ricky Andrew Montoya</h1>
+                    <p data-role="student" data-interest="Web Development">
+                        Information Technology<br>BSIT 3A
+                    </p>
+                </td>
+            </table>
+        </header>
+        <!-- NAVIGATION -->
+        <nav style="margin: 0 0 1.5em 0;">
+            <a href="#bio" style="margin: 0 1em">About Me</a>
+            <a href="#hobbies" style="margin: 0 1em">Hobbies</a>
+            <a href="#contact" style="margin: 0 1em">Contact</a>
+            <a href="#extras" style="margin: 0 1em">Extras</a>
+        </nav>
+    </center>
+    <!-- MAIN -->
+    <main>
+        <!-- Profile -->
+        <article>
+            <section id="bio">
+                <h2>About Me</h2>
+                <p style="text-align: center;">
+                    Hello! I’m Drew, a BSIT 3A student from<br>
+                    Technological University of the Philippines - Manila.
+                <div style="text-align: justify; font-variant: normal;">
+                    Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae
+                    pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed
+                    diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl
+                    malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad
+                    litora torquent per conubia nostra inceptos himenaeos.
+                    Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae
+                    pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed
+                    diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl
+                    malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad
+                    litora torquent per conubia nostra inceptos himenaeos.<br><br>
+                    Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae
+                    pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed
+                    diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl
+                    malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad
+                    litora torquent per conubia nostra inceptos himenaeos.
+                    Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae
+                    pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed
+                    diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl
+                    malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad
+                    litora torquent per conubia nostra inceptos himenaeos.
+                </div>
+                </p>
+            </section>
+            <section id="hobbies">
+                <h2>Hobbies</h2>
+                <ul>
+                    <li>Coding</li>
+                    <li>Gaming</li>
+                    <li>Drawing</li>
+                </ul>
+            </section>
+            <!-- Achievements -->
+            <section id="extras">
+                <h2>Achievements & Certifications</h2>
+                <details>
+                    <summary>View Certifications</summary>
+                    <p>
+                        <li>Scholars Leadership Camp 2024</li>
+                        <li>National Patriot Scholars Congress 2025</li>
+                    </p>
+                </details>
+                <!-- Embedded YouTube Video -->
+                <h3>Featured Video</h3>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/ef568d0CrRY" title="YouTube video"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen>
+                </iframe>
+                </iframe>
+            </section>
+        </article>
+        <!-- Contact Form -->
+        <aside id="contact">
+            <h2>Contact Me</h2>
+            <form>
+                <label>Email:</label><br>
+                <input type="email" name="email" placeholder="Enter your email" required><br><br>
+
+                <label>Phone:</label><br>
+                <input type="tel" name="phone" placeholder="09XX-XXX-XXXX" pattern="[0-9]{11}" required><br><br>
+
+                <label>Meeting Date:</label><br>
+                <input type="date" name="meet_date" required><br><br>
+
+                <label>Favorite Color:</label><br>
+                <input type="color" name="fav_color"><br><br>
+
+                <label>Message:</label><br>
+                <textarea name="message" placeholder="Write your message here..." required></textarea><br><br>
+
+                <button type="submit" style="margin: auto; display: block;">Send</button>
+            </form>
+            <!-- 
+            <h2>Feedback Form</h2>
+            <p>Please fill out this form below:</p>
+            <iframe src="https://forms.gle/HPn6rdjR5vNYqpoa9" width="300" height="800" frameborder="0" marginheight="0" marginwidth="0"></iframe>
+            <img style="width: 450px; height: 525px; margin-top: 1.5em;" src="assets/cat.jpg" alt="Cat"> -->
+        </aside>
+    </main>
+
+    <!-- FOOTER -->
+    <center>
+        <footer>
+            <p>Connect with me:</p>
+            <a href="https://facebook.com" target="_blank">Facebook</a> |
+            <a href="https://twitter.com" target="_blank">Twitter</a> |
+            <a href="https://instagram.com" target="_blank">Instagram</a>
+            <p>&copy; Ricky Andrew Montoya &bull; BSIT 3A</p>
+        </footer>
+    </center>
+
 </body>
+
 </html>
